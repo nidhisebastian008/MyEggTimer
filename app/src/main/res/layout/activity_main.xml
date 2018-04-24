@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nidhi.myeggtimer.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/eggImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="401dp"
+            android:layout_marginTop="110dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/egg" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="150dp"
+            android:text="0:30"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eggImageView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="150dp"
+            android:onClick="buttonClicked"
+            android:text="go"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/eggImageView"
+            app:layout_constraintTop_toBottomOf="@+id/timerTextView"
+            app:layout_constraintVertical_bias="0.756"
+            tools:text="go!" />
+
+        <SeekBar
+            android:id="@+id/timerSeekBar"
+            android:layout_width="322dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/eggImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
