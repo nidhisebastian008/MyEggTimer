@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     SeekBar timerSeekBar;
     boolean counterActive =false;
     CountDownTimer countDownTimer;
+    //go button
     Button goButton;
 
 
